@@ -1,0 +1,45 @@
+body{
+    margin:0;
+    padding: 30px 0;
+    box-sizing: border-box;
+    background-color: rgba(57, 69, 235, 0.616);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    height: 40px;
+    width: 250px;
+    outline: unset;
+}
+
+li{
+    list-style: none;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 30px;
+    border: 1px solid gray;
+}
+
+li:nth-child(odd){
+    box-shadow: inset 1px -20px 20px 0px #d9d9d9;
+    transform: matrix3d(1, 0, 0, 0, 0.1, 1, 0, 0, 0, 0, 1, 0, 3, 0, 0, 1);
+    transform-origin: bottom;
+}
+li:nth-child(even){
+    box-shadow: inset 0px 20px 20px 0px #d9d9d9;
+    transform: matrix3d(1, 0, 0, 0, -0.1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+
+}
+
+span{
+    text-transform: capitalize;
+}
+
+.hl{
+    background-color: rgba(57, 69, 235, 0.616);
+    color: #fff;
+}
